@@ -1,0 +1,10 @@
+Algortihm description:
+The program will load process list from data file. Then it will start simulating based on different fit stratergy. A bitset memStatus record the memory avilablity. When memStatus[i] == 0, it means the memory is avaible otheriwse it is occupied by other processes. Before each simulation the memory status will be cleared. Our search memory block function will find the valid memory block based on memStatus. First fit is easy to implement which will find the first valid empty memory block. Next fit is familiar with first fit but it will start next search from the last position it has been probed. Best fit is trying to find the block which has the most suitable size regarding the process id which have least memory waste(which is a hole). Worst fit will try to get the largest memery block. 
+
+Assumption:
+The argument 1 is for input data file containing process load list. 
+
+How to run the program:
+1. Use "cd" command to the directory contains source code and makefile
+2. Enter "make"
+3. Executable file holess will be generated and enter "holes ./data"

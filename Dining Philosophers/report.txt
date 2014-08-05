@@ -1,0 +1,12 @@
+Algortihm description:
+The operation of taking left and right chopsticks of each philosopher must be atomic. So each chopstick will have a condition variable and all philosophers who want to acquire the chopstick will try to get it, if he can not obtain instantly, they will stand on a waiting list. They will be notified when chopsticks are returned by others. In this approach, starvation and deadlock will be prevented.  
+
+Assumption:
+The argument 1 is for philosepher number and argument 2 is for eat times. 
+
+How to run the program:
+1. Use "cd" command to the directory contains source code and makefile
+2. Enter "make"
+3. Executable file dine will be generated and enter "dine 3 2"
+ 
+
